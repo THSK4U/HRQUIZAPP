@@ -1,0 +1,103 @@
+.owl img {
+    position: absolute;
+    width: 400px;
+    top: 500px;
+    height: auto;
+    z-index: -1;
+}
+
+body{
+    position: relative;
+    height: 130vh;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+nav{
+    background-color: white;
+    color: #001584;
+}
+
+.input{
+    border-radius: 40px;
+    background-color: #e9e9e9;
+    color: rgba(0, 0, 0, 0.59);
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.input:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.quastion h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #001584;
+}
+.quastion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.progress {
+    width: 70%;
+    height: 5px;
+}
+.reponse {
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 0 30%;
+}
+.timerbar{
+    display: flex;
+    margin-bottom: 10px;
+}
+#timer{
+    margin: 14%;
+}
+
+@media screen and (max-width: 835px) {
+    body{
+        overflow: scroll;
+    }
+    .owl img {
+        position: absolute;
+        width: 150px;
+        padding-top: 80px;
+        height: auto;
+        z-index: -1;
+    }
+    nav{
+        background-color: transparent;
+    }
+    .questions{
+        background-color: #001584;
+        height: 100vh;
+        border-radius: 50px 50px 0 0;
+    }
+    .quastion{
+        margin-top: 30px;
+    }
+    .quastion h2{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .reponse {
+        padding: 0 5%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .NumberQ{
+        color: #000000;
+    }
+    .progress {
+        width: 100%;
+        height: 5px;
+    }
+}
+
