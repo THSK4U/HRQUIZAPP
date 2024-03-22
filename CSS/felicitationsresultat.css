@@ -1,0 +1,54 @@
+.owl img {
+    position: absolute;
+    width: 200px;
+    top: 570px;
+    height: auto;
+    z-index: 1;
+}
+
+body{
+    display: flex;
+    background-color: #ffffff;
+    overflow: hidden; 
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.faild{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 75vh;
+    border-radius: 116px 116px 0 0;
+}
+.alert{
+    color: white;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 150px;
+    filter: drop-shadow(0px 4px 8px #00000020);
+}
+.motivationtext{
+    position: absolute;
+    top: 600px;
+    height: 100px;
+    border-radius: 40px;
+    width: 90%;
+    z-index: 0;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.badge{
+    --bs-badge-font-size:1.2rem;
+}
