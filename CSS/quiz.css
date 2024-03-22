@@ -56,6 +56,9 @@ nav{
 #timer{
     margin: 14%;
 }
+#advertisement {
+    display: none;
+}
 
 @media screen and (max-width: 835px) {
     body{
@@ -64,6 +67,7 @@ nav{
     .owl img {
         position: absolute;
         width: 150px;
+        top: 0;
         padding-top: 80px;
         height: auto;
         z-index: -1;
@@ -98,6 +102,9 @@ nav{
     .progress {
         width: 100%;
         height: 5px;
+    }
+    .alert{
+        font-size: 14px;
     }
 }
 
