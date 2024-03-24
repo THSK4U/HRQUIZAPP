@@ -209,8 +209,11 @@ function CheckAnswer(correct) {
     if (index < questions.length) {
         Question();
         progressbar();
-    } else {
+    } else if ((100 / questions.length) * score <= 75) {
         window.location.href = '/HTML/echecresultats.html';
+    }else {
+        window.location.href = '/HTML/felicitationsresultat.html';
+
     }
 }
 
@@ -235,9 +238,10 @@ window.onload = function() {
     if (savedScore !== null) {
         score = parseInt(savedScore);
         resulta.innerHTML = score;
+        
     }
 
-    const timeToDisplay = 840000; // 840000 = 14min
+    const timeToDisplay = 1000; // 840000 = 14min
     setTimeout(alert, timeToDisplay);
     
     localStorage.removeItem('score');

@@ -8,7 +8,6 @@
 
 body{
     position: relative;
-    height: 130vh;
     background-color: #F2F2F2;
     overflow: hidden;
 }
@@ -77,19 +76,20 @@ nav{
     }
     .questions{
         background-color: #001584;
-        height: 100vh;
+        height: 85vh;
         border-radius: 50px 50px 0 0;
     }
     .quastion{
         margin-top: 30px;
     }
     .quastion h2{
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin:20px 0 25px 20px;
         color: white;
+        font-size: 99%;
     }
     .reponse {
         padding: 0 5%;
+        font-size: 83%;
     }
     nav{
         display: flex;

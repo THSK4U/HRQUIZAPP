@@ -5,32 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/CSS/echecresultats.css">
+<link rel="stylesheet" href="/CSS/felicitationsresultat.css">
 </head>
 <body>
-    
+
     <main> 
-        <div class="owl">
-        <img src="/Media/angryowl.png" alt="angryowl">
+        <div class="owl position-absolute">
+        <img class="w-100 h-100" src="/Media/happy.png" alt="angryowl">
+        <img class="position-absolute gif" src="/Media/l03b0s.d57ca31e.gif" alt="gif">
     </div>
         
-        <div class="faild bg-danger">
+        <div class="Success bg-success">
 
-            <div class="alert">
-            <div class="image">
-                <img src="/Media/pngwing.png" alt="échec icon">
+            <div class="alert text-white">
+
+            <div class="Successful">
+                    <div style="overflow: hidden;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+                            <g transform="matrix(0.335,0,0,0.33,50,50)" opacity="0.8" style="display: block;">
+                                <g transform="matrix(3,0,0,3,0,0)" class="">
+                                    <path class="circel" fill-opacity="0" stroke="rgb(255,255,255)" stroke-width="6" d=" M0,-45 C24.8 ,-45 45,-24.8  45,0 C45,24.8  24.8 ,45 0,45 C-24.8 ,45 -45,24.8  -45,0 C-45,-24.8  -25.8 ,-45 1,-45z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g transform="matrix(0.33,0,0,0.33,50,46.5)" opacity="0.8" class="chek">
+                                <g opacity="1" transform="matrix(2.1,2.1,-2.1,2.15,0,0)">
+                                    <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgba(255, 255, 255)" stroke-width="7.5" d=" M7.5,-16.5 C7.5,-16.5 7.5,16.5 7.5,16.5 C7.5,16.5 -7.5,16.5 -7.5,16.5">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
             </div>
             
-            <div class="resulta">
+            <div class="resulta d-flex flex-column align-items-center">
                 <p>Nombre de bonnes réponses: <span>0</span>/16</p>
+                <br>
+                <h1 class="display-1 text-uppercase text-warning">Félicitations</h1>
+                <p class="badge"> Bravo ! Tu as réussi !</p>
             </div>
         </div>
         </div>
 
-       
-        <div class="motivationtext badge bg-secondary text-wrap">
-        <span>Le succès c'est d'aller d'échec en échec sans perdre son enthousiasme.</span>
-        </div>
         
 
     </main>

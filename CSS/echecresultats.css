@@ -19,16 +19,21 @@ main{
     width: 100%;
     height: 100vh;
 }
-
+.red{
+    display: flex;
+    justify-content: center;
+}
 .faild{
     display: flex;
     justify-content: center;
     width: 90%;
     height: 75vh;
     border-radius: 116px 116px 0 0;
+    
 }
 .alert{
     color: white;
+    
 }
 
 .image{
@@ -37,6 +42,8 @@ main{
     margin-bottom: 15px;
     height: 150px;
     filter: drop-shadow(0px 4px 8px #00000020);
+    animation: textanimation 2354ms 1 ease-in 15ms;
+    margin-bottom: 10%;
 }
 .motivationtext{
     position: absolute;
@@ -51,4 +58,58 @@ main{
 }
 .badge{
     --bs-badge-font-size:1.2rem;
+}
+.text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    width: 70%;
+    z-index: 1;
+    font-size: 90%;
+  }
+
+
+  @keyframes textanimation {
+    from {
+      transform: translate(100px, -100px) skew(89deg, -89deg);;
+    }
+    to {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @media screen and (min-width:700px) {
+    .owl {
+        bottom: 0;
+    } }
+
+
+
+@media screen and (max-width:700px) {
+    .owl img{
+        margin-top: 30px;
+        top: 0;
+        left: 30%;
+        width: 40%;
+        z-index: -1;
+    } 
+    .faild{
+        width: 482px;
+        height: 82vh;
+        position: absolute;
+        bottom: 0;
+        border-radius: 103px 103px 0% 0%;
+    }
+    .badge{
+        --bs-badge-font-size:1.0rem;
+    }
+    .text {
+        margin-top: 250px;
+        width: 90%;
+        b
+      }
+      
+    
 }
